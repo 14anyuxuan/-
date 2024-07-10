@@ -1,0 +1,89 @@
+# **********************************************
+# ls1x project
+# **********************************************
+# Name of application
+ROOT_DIR  = $(PWD)
+
+# **********************************************
+# Tools
+# **********************************************
+CROSS_COMPILE = loongarch32-linux-gnusf-
+#CROSS_COMPILE = loongarch32-linux-gnu-
+CC        = $(CROSS_COMPILE)gcc
+LD        = $(CROSS_COMPILE)ld
+OBJCOPY   = $(CROSS_COMPILE)objcopy
+OBJDUMP   = $(CROSS_COMPILE)objdump 
+STRIP     = $(CROSS_COMPILE)strip
+SIZE	  = $(CROSS_COMPILE)size
+CP	      = cp 
+
+# **********************************************
+# Directories
+# **********************************************
+BUILD_DIR = $(ROOT_DIR)/build
+TARGET	  = $(ROOT_DIR)/target
+PUBLIC	  = $(ROOT_DIR)/public
+
+IMAGENAME = 1d100_demo
+PRIVATE	  = $(ROOT_DIR)/ls1d100
+CASE	  = $(ROOT_DIR)/case
+
+SRCDIR    = $(TARGET) $(PUBLIC) $(PRIVATE) $(CASE)
+VPATH     = $(SRCDIR)
+#DEBUG = -g
+# **********************************************
+# Image file names and map file
+# **********************************************
+IMAGE_ELF = $(IMAGENAME).elf
+IMAGE_BIN = $(IMAGENAME).bin
+IMAGE_MAP = $(IMAGENAME).map
+
+# **********************************************
+# Compiler and linker options
+# **********************************************
+INCLUDE	+= -I$(ROOT_DIR)/include -I$(PUBLIC) -I$(PRIVATE) -I$(CASE)
+#FLAGS   = -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msingle-float -w 
+FLAGS   = -std=gnu99 -O2 -ffunction-sections -fdata-sections -fno-builtin -msoft-float -w 
+
+CC_OPTS	= $(DEBUG) $(FLAGS) $(INCLUDE) 
+CC_COPTS	= $(DEBUG) $(FLAGS) $(INCLUDE) 
+
+LD_SCRIPT = ld.script
+LD_OPTS   = -G 0 -static -T $(LD_SCRIPT) -Ttext 0x1C000000 -Map $(IMAGE_MAP) -o $(IMAGE_ELF) --gc-sections
+
+#SOFT_LIB =/opt/cross_loongsonarch/loongson-gnu-toolchain-8.3-x86_64-loongarch32-linux-gnu-v1.0/lib/gcc/loongarch32-linux-gnusf/8.3.0/base/ilp32s/libgcc.a  # $(CC) --print-file-name=libgcc.a
+SOFT_LIB = $(shell $(CC) --print-file-name=libgcc.a)
+
+# **********************************************
+# Files to be compiled
+# **********************************************
+
+SRC_C  = $(foreach dir, $(SRCDIR), $(wildcard $(dir)/*.c))
+SRC_S  = $(foreach dir, $(SRCDIR), $(wildcard $(dir)/*.S))
+SRC    = $(SRC_C) $(SRC_S)
+OBJ_C  = $(notdir $(patsubst %.c, %.o, $(SRC_C)))
+OBJ_S  = start.o $(filter-out start.o, $(notdir $(patsubst %.S, %.o, $(SRC_S))))
+LS1C1X_OBJ = $(OBJ_S) $(OBJ_C) $(SOFT_LIB)
+
+# **********************************************
+# Rules
+# **********************************************
+.PHONY : all
+all : $(IMAGE_BIN) 
+$(IMAGE_BIN):$(LS1C1X_OBJ) 
+	$(LD) $(LD_OPTS) -o $(IMAGE_ELF) $^ -Map $(IMAGE_MAP) 
+	$(OBJCOPY) -O binary $(IMAGE_ELF) $(IMAGE_BIN)
+	$(SIZE) $(IMAGE_ELF)
+	$(OBJDUMP) -alDS $(IMAGE_ELF) > $(IMAGENAME).s
+	#$(STRIP) -g -S --strip-debug $(IMAGE_ELF)
+	cp -rf $(BUILD_DIR)/$(IMAGE_BIN) /tmp/
+	cp -rf $(BUILD_DIR)/$(IMAGE_BIN) ..
+
+$(OBJ_C) : %.o : %.c 
+	$(CC) $(CC_COPTS) -c -o $@ $^
+$(OBJ_S) : %.o : %.S
+	$(CC) $(CC_OPTS) -c -o $@ $^
+
+.PHONY : clean 
+clean :
+	rm -rf *.o *.elf *.map *.bin *.s *.a 

@@ -1,0 +1,102 @@
+/*
+ * loongson taiyuan lixin
+ */
+OUTPUT_FORMAT("elf32-tradlittlemips", "elf32-tradlittlemips", "elf32-tradlittlemips")
+OUTPUT_ARCH(mips)
+ENTRY(_start)
+SECTIONS
+{
+	. = ALIGN(4);
+	. = 0xbfc00000;  
+	__text_start = .; /* text */
+	.text	: 
+	{
+	. = ALIGN(4096);
+	 start.o (.text*)
+	. = ALIGN(4096);
+	__boot_end = .;
+	 . = ALIGN(4);
+	 *(.text)
+	 *(.rodata) 
+	 *(.rodata1)
+	}
+	. = ALIGN(4);
+	.rel.text  : { *(.rel.text) }
+	. = ALIGN(4);
+	.reginfo  : { *(.reginfo) }
+	. = ALIGN(4);
+	.ptr  : { *(.ptr) }
+	. = ALIGN(4);
+	.shstrtab  : { *(.shstrtab) }
+	. = ALIGN(4);
+	.strtab  : { *(.strtab) }	
+	__text_end = . ;
+	.data    :
+	{
+	   _fdata = . ;
+	   *(.data)
+	  /* Align the initial ramdisk image (INITRD) on page boundaries.*/
+	  . = ALIGN(4);
+	   __rd_start = .;
+	   *(.initrd)
+	   __rd_end = .;
+	   . = ALIGN(4);
+	    CONSTRUCTORS
+	  }
+	  .data1   : { *(.data1) }
+	  _gp = . + 0x0100;
+	  .lit8 : { *(.lit8) }
+	  .lit4 : { *(.lit4) }
+	  .ctors         : { *(.ctors)   }
+	  .dtors         : { *(.dtors)   }
+	  .got           : { *(.got.plt) *(.got) }
+	  .dynamic       : { *(.dynamic) }
+	  .sdata     : { *(.sdata) }
+	  . = ALIGN(4);
+	  _edata  =  .;
+	  PROVIDE (edata = .);  
+	. = ALIGN(4);
+ 	. = 0xa0001000;   
+	__bss_start = .;
+    	_fbss = . ;  
+  	.sbss      : { *(.sbss) *(.scommon) }
+  	.bss       :
+  	{
+	   *(.dynbss)
+	   *(.bss)
+	   *(COMMON)
+	   .  = ALIGN(4);
+	   _end = . ; 
+	   PROVIDE (end = .);
+	 }
+  	__bss_end = . ;
+  /* Sections to be discarded */
+  /DISCARD/ :
+  {
+        *(.text.exit)
+        *(.data.exit)
+        *(.exitcall.exit)
+  }
+
+  /* This is the MIPS specific mdebug section.  */
+  .mdebug : { *(.mdebug) }
+  /* These are needed for ELF backends which have not yet been
+     converted to the new style linker.  */
+  .stab 0 : { *(.stab) }
+  .stabstr 0 : { *(.stabstr) }
+  /* DWARF debug sections.
+     Symbols in the .debug DWARF section are relative to the beginning of the
+     section so we begin .debug at 0.  It's not clear yet what needs to happen
+     for the others.   */
+  .debug          0 : { *(.debug) }
+  .debug_srcinfo  0 : { *(.debug_srcinfo) }
+  .debug_aranges  0 : { *(.debug_aranges) }
+  .debug_pubnames 0 : { *(.debug_pubnames) }
+  .debug_sfnames  0 : { *(.debug_sfnames) }
+  .line           0 : { *(.line) }
+  /* These must appear regardless of  .  */
+  .gptab.sdata : { *(.gptab.data) *(.gptab.sdata) }
+  .gptab.sbss : { *(.gptab.bss) *(.gptab.sbss) }
+  .comment : { *(.comment) }
+  .note : { *(.note) }		
+}

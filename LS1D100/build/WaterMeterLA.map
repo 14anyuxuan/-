@@ -1,0 +1,1720 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+firdata             0x1c              Filter.o
+LastTask            0x4               GlobalDef.o
+devieID             0x2               w25q16.o
+MaxDiff             0x2               ls1d_std_adc.o
+g_FBn_Buff          0xc               ls1d_std_lcd.o
+MaxAdc              0x2               ls1d_std_adc.o
+debugflag           0x4               main.o
+temper_shift        0x4               UserMeasure.o
+inte8m              0x4               ls1d_std_clock.o
+MeasureRecord       0x40              UserMeasure.o
+g_adc_diff          0x2               ls1d_std_adc.o
+rawdata             0x1c              Filter.o
+key_mode            0x4               main.o
+forward_Q           0x4               UserMeasure.o
+MinAdc              0x2               ls1d_std_adc.o
+g_adc_data          0x2               ls1d_std_adc.o
+inte32K             0x4               ls1d_std_clock.o
+MidAdc              0x2               ls1d_std_adc.o
+backward_Q          0x4               UserMeasure.o
+MainTask            0x4               GlobalDef.o
+Flash_pe            0x4               ls1d_std_flash.o
+zero_position       0xc               UserMeasure.o
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x14 start.o
+ .data          0x0000000000000000        0x0 start.o
+ .bss           0x0000000000000000        0x0 start.o
+ .text          0x0000000000000000      0x180 sonar.o
+ .data          0x0000000000000000        0x0 sonar.o
+ .bss           0x0000000000000000        0x0 sonar.o
+ .debug_line    0x0000000000000000       0xb6 sonar.o
+ .debug_info    0x0000000000000000       0x26 sonar.o
+ .debug_abbrev  0x0000000000000000       0x14 sonar.o
+ .debug_aranges
+                0x0000000000000000       0x20 sonar.o
+ .debug_str     0x0000000000000000       0x6d sonar.o
+ .text          0x0000000000000000        0x0 ls1d_std_adc.o
+ .data          0x0000000000000000        0x0 ls1d_std_adc.o
+ .bss           0x0000000000000000        0x0 ls1d_std_adc.o
+ .text.ADC_Init
+                0x0000000000000000       0x90 ls1d_std_adc.o
+ .text.ADC_Start
+                0x0000000000000000       0x40 ls1d_std_adc.o
+ .text.ADC_Measure
+                0x0000000000000000       0xc0 ls1d_std_adc.o
+ .text.ADC_Mv   0x0000000000000000       0x10 ls1d_std_adc.o
+ .text.Insert_Sort
+                0x0000000000000000       0x50 ls1d_std_adc.o
+ .text.ADC_DetectPower
+                0x0000000000000000       0xc0 ls1d_std_adc.o
+ .rodata.ADC_Sample.str1.4
+                0x0000000000000000       0x39 ls1d_std_adc.o
+ .text.ADC_Sample
+                0x0000000000000000      0x1e0 ls1d_std_adc.o
+ .text.ADC_Channel0InputMode
+                0x0000000000000000       0x40 ls1d_std_adc.o
+ .text          0x0000000000000000        0x0 ls1d_std_uart.o
+ .data          0x0000000000000000        0x0 ls1d_std_uart.o
+ .bss           0x0000000000000000        0x0 ls1d_std_uart.o
+ .text.UART_ReceiveData
+                0x0000000000000000       0x10 ls1d_std_uart.o
+ .text.UART_ClearITPendingBit
+                0x0000000000000000       0x40 ls1d_std_uart.o
+ .rodata.UART_ClearITPendingBit
+                0x0000000000000000       0x34 ls1d_std_uart.o
+ .text.UART_IrInit
+                0x0000000000000000       0x80 ls1d_std_uart.o
+ .text.UART_IrSendData
+                0x0000000000000000       0x20 ls1d_std_uart.o
+ .text.UART_IrReceiveData
+                0x0000000000000000       0x10 ls1d_std_uart.o
+ .text.UART_SendChar
+                0x0000000000000000       0x20 ls1d_std_uart.o
+ .text          0x0000000000000000        0x0 ls1d_std_spi.o
+ .data          0x0000000000000000        0x0 ls1d_std_spi.o
+ .bss           0x0000000000000000        0x0 ls1d_std_spi.o
+ .text.SPI_GetFlagStatus
+                0x0000000000000000       0x10 ls1d_std_spi.o
+ .text.SPI_ITCmd
+                0x0000000000000000       0x30 ls1d_std_spi.o
+ .text.SPI_ITConfig
+                0x0000000000000000       0x30 ls1d_std_spi.o
+ .text.SPI_GetITStatus
+                0x0000000000000000       0x10 ls1d_std_spi.o
+ .text          0x0000000000000000        0x0 ls1d_std_gpio.o
+ .data          0x0000000000000000        0x0 ls1d_std_gpio.o
+ .bss           0x0000000000000000        0x0 ls1d_std_gpio.o
+ .text.GPIO_Init
+                0x0000000000000000       0x90 ls1d_std_gpio.o
+ .text.GPIO_BitInit
+                0x0000000000000000       0x90 ls1d_std_gpio.o
+ .text.GPIO_ReadInputDataBit
+                0x0000000000000000       0x30 ls1d_std_gpio.o
+ .text.GPIO_ReadInputData
+                0x0000000000000000       0x10 ls1d_std_gpio.o
+ .text.GPIO_ReadOutputData
+                0x0000000000000000       0x10 ls1d_std_gpio.o
+ .text.GPIO_WriteBit
+                0x0000000000000000       0x40 ls1d_std_gpio.o
+ .text.GPIO_WriteData
+                0x0000000000000000       0x10 ls1d_std_gpio.o
+ .text          0x0000000000000000        0x0 ls1d_std_measure.o
+ .data          0x0000000000000000        0x0 ls1d_std_measure.o
+ .bss           0x0000000000000000        0x0 ls1d_std_measure.o
+ .text.MEASURE_TdcSetWindow
+                0x0000000000000000      0x120 ls1d_std_measure.o
+ .rodata        0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_GateWindowInit
+                0x0000000000000000       0x60 ls1d_std_measure.o
+ .text.MEASURE_DefaultInit
+                0x0000000000000000       0x70 ls1d_std_measure.o
+ .rodata.MEASURE_GetPulseWidth.str1.4
+                0x0000000000000000       0x15 ls1d_std_measure.o
+ .text.MEASURE_GetPulseWidth
+                0x0000000000000000      0x1c0 ls1d_std_measure.o
+ .text.MEASURE_GetTdcCal
+                0x0000000000000000      0x320 ls1d_std_measure.o
+ .text.MEASURE_WriteTdcCalToReg
+                0x0000000000000000       0xb0 ls1d_std_measure.o
+ .text.MEASURE_GetStartTime
+                0x0000000000000000       0x50 ls1d_std_measure.o
+ .text.MEASURE_GetResData
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_ClearResPtrReg
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_ClearADCPtrReg
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_ClearTdcResReg
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.MEASURE_GetTdcResReg
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_ClearTdcCalReg
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetResReadFlag
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.MEASURE_GetResPtrReg
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.GetVrefValue
+                0x0000000000000000      0x100 ls1d_std_measure.o
+ .text.MEASURE_GetAmcValue
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_GetAutoCalculateFirRate
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_GetAutoDtofValue
+                0x0000000000000000       0x80 ls1d_std_measure.o
+ .text.MEASURE_GetDtofConvertPsValue
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_GetManualDtofValue
+                0x0000000000000000       0xf0 ls1d_std_measure.o
+ .rodata.MEASURE_ExpectResPtr.str1.4
+                0x0000000000000000       0x1d ls1d_std_measure.o
+ .text.MEASURE_ExpectResPtr
+                0x0000000000000000      0x120 ls1d_std_measure.o
+ .text.MEASURE_SetCruiseMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetWatchDog
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetCruiseXMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetCruiseTOF
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetCruiseAutoDirection
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetFireSel
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveFireNum
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetStopSel
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetMannualDirectionReverse
+                0x0000000000000000       0x50 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWavePeakMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_GetPulseWavePeakMode
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveWideMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_GetPulseWaveWideMode
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetFirstPulseWaveMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetPulseFirstWaveThreshold
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveHitNum
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_GetPulseWaveHitNum
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveTailEnd
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveWaitEnd
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetPulseWaveHitIgnNum
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateMode
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateHitNum
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetAutoCalculateFltRate
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetTdcAutoCalPre
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetTdcAutoCalPst
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_GetTdcAutoCalPre
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_GetTdcAutoCalPst
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestSel
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestDual
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtest
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVtestOut
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefOut
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefSel
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRef
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetAfeVRefDrive
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetTdcPreDelayValue
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_GetCalibrationZeroValue
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationZeroValue
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetCalBypass
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationDelayValue
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_SetCalibrationMethod
+                0x0000000000000000       0x40 ls1d_std_measure.o
+ .text.MEASURE_StartTask
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.MEASURE_SetTask
+                0x0000000000000000       0x30 ls1d_std_measure.o
+ .text.MEASURE_SetTaskToStart
+                0x0000000000000000       0x50 ls1d_std_measure.o
+ .text.MEASURE_StopTask
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SuspendTask
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_SleepTask
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_ExitCruiseTask
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_CanCpuSleep
+                0x0000000000000000       0x10 ls1d_std_measure.o
+ .text.MEASURE_GetITStatus
+                0x0000000000000000       0xc0 ls1d_std_measure.o
+ .text.MEASURE_ClearITPendingBit
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.MEASURE_GetTemperaturePortDirection
+                0x0000000000000000       0x20 ls1d_std_measure.o
+ .text.iabs     0x0000000000000000       0x10 ls1d_std_measure.o
+ .text          0x0000000000000000        0x0 ls1d_std_exti.o
+ .data          0x0000000000000000        0x0 ls1d_std_exti.o
+ .bss           0x0000000000000000        0x0 ls1d_std_exti.o
+ .text.EXTI_IsGlobalIntOpen
+                0x0000000000000000       0x10 ls1d_std_exti.o
+ .text.EXTI_DisableInt
+                0x0000000000000000       0x10 ls1d_std_exti.o
+ .text.EXTI_DeInit
+                0x0000000000000000       0x20 ls1d_std_exti.o
+ .text.EXTI_Init
+                0x0000000000000000      0x110 ls1d_std_exti.o
+ .text.EXTI_StructInit
+                0x0000000000000000       0x20 ls1d_std_exti.o
+ .text.EXTI_SoftInterruptStart
+                0x0000000000000000       0x10 ls1d_std_exti.o
+ .text.EXTI_SoftInterruptStop
+                0x0000000000000000       0x10 ls1d_std_exti.o
+ .text.EXTI_GetFlagStatus
+                0x0000000000000000       0x20 ls1d_std_exti.o
+ .text.EXTI_ClearFlag
+                0x0000000000000000       0x30 ls1d_std_exti.o
+ .text.EXTI_GetITStatus
+                0x0000000000000000       0x30 ls1d_std_exti.o
+ .text          0x0000000000000000        0x0 ls1d_std_power.o
+ .data          0x0000000000000000        0x0 ls1d_std_power.o
+ .bss           0x0000000000000000        0x0 ls1d_std_power.o
+ .text.POWER_ClockFastModeConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_CPUTurboModeConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_RamOffConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_SonarOffConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_MbusOffConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_KeyModeConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_SpiLPOffConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_SpiLowPowerOffTimeConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_Vr1OffConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_Vr1ActiveConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_Vr0SonarStandbyConfig
+                0x0000000000000000       0x40 ls1d_std_power.o
+ .text.POWER_GetClockFastMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetCPUTurboMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetRamOffMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetSonarOffMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetMbusOffMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetSpiLPOffMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetVr1OffMode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetVr1Mode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_GetVr0Mode
+                0x0000000000000000       0x20 ls1d_std_power.o
+ .text.POWER_SleepCPU
+                0x0000000000000000       0x10 ls1d_std_power.o
+ .text          0x0000000000000000        0x0 ls1d_std_rtc.o
+ .data          0x0000000000000000        0x0 ls1d_std_rtc.o
+ .bss           0x0000000000000000        0x0 ls1d_std_rtc.o
+ .text.RTC_StructInit
+                0x0000000000000000       0x30 ls1d_std_rtc.o
+ .text.RTC_GetDateTime
+                0x0000000000000000       0x40 ls1d_std_rtc.o
+ .text.RTC_SetDateTime
+                0x0000000000000000       0xe0 ls1d_std_rtc.o
+ .text.RTC_Init
+                0x0000000000000000       0x50 ls1d_std_rtc.o
+ .text.RTC_ITConfig
+                0x0000000000000000       0x40 ls1d_std_rtc.o
+ .text.RTC_SetAlarm
+                0x0000000000000000       0xf0 ls1d_std_rtc.o
+ .text.RTC_ClearIT
+                0x0000000000000000       0x20 ls1d_std_rtc.o
+ .debug_info    0x0000000000000000      0x5b2 ls1d_std_rtc.o
+ .debug_abbrev  0x0000000000000000      0x1e2 ls1d_std_rtc.o
+ .debug_loc     0x0000000000000000      0x1b1 ls1d_std_rtc.o
+ .debug_aranges
+                0x0000000000000000       0x50 ls1d_std_rtc.o
+ .debug_ranges  0x0000000000000000       0x78 ls1d_std_rtc.o
+ .debug_line    0x0000000000000000      0x396 ls1d_std_rtc.o
+ .debug_str     0x0000000000000000      0x3bf ls1d_std_rtc.o
+ .comment       0x0000000000000000       0x3b ls1d_std_rtc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_rtc.o
+ .debug_frame   0x0000000000000000       0x8c ls1d_std_rtc.o
+ .text          0x0000000000000000        0x0 ls1d_std_i2c.o
+ .data          0x0000000000000000        0x0 ls1d_std_i2c.o
+ .bss           0x0000000000000000        0x0 ls1d_std_i2c.o
+ .text.I2C_Init
+                0x0000000000000000       0x90 ls1d_std_i2c.o
+ .text.I2C_StructInit
+                0x0000000000000000       0x20 ls1d_std_i2c.o
+ .text.I2C_ITConfig
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_ITCmd
+                0x0000000000000000       0x40 ls1d_std_i2c.o
+ .text.I2C_GenerateSTART
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_GenerateSTOP
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_AcknowledgeConfig
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_SendData
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_ReceiveData
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_Send7bitAddress
+                0x0000000000000000       0x50 ls1d_std_i2c.o
+ .text.I2C_ReadRegister
+                0x0000000000000000       0x30 ls1d_std_i2c.o
+ .text.I2C_ClearFlag
+                0x0000000000000000       0x10 ls1d_std_i2c.o
+ .text.I2C_GetStatus
+                0x0000000000000000       0x10 ls1d_std_i2c.o
+ .text.I2C_ClearIT
+                0x0000000000000000       0x20 ls1d_std_i2c.o
+ .text.I2C_wait
+                0x0000000000000000       0x10 ls1d_std_i2c.o
+ .text.I2C_BUSY
+                0x0000000000000000       0x10 ls1d_std_i2c.o
+ .text.I2C_Unlock
+                0x0000000000000000       0x20 ls1d_std_i2c.o
+ .debug_info    0x0000000000000000      0x797 ls1d_std_i2c.o
+ .debug_abbrev  0x0000000000000000      0x2ad ls1d_std_i2c.o
+ .debug_loc     0x0000000000000000      0x2af ls1d_std_i2c.o
+ .debug_aranges
+                0x0000000000000000       0xa0 ls1d_std_i2c.o
+ .debug_ranges  0x0000000000000000       0xa8 ls1d_std_i2c.o
+ .debug_line    0x0000000000000000      0x4fe ls1d_std_i2c.o
+ .debug_str     0x0000000000000000      0x412 ls1d_std_i2c.o
+ .comment       0x0000000000000000       0x3b ls1d_std_i2c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_i2c.o
+ .debug_frame   0x0000000000000000      0x128 ls1d_std_i2c.o
+ .text          0x0000000000000000        0x0 ls1d_std_wdg.o
+ .data          0x0000000000000000        0x0 ls1d_std_wdg.o
+ .bss           0x0000000000000000        0x0 ls1d_std_wdg.o
+ .text          0x0000000000000000        0x0 ls1d_std_timer.o
+ .data          0x0000000000000000        0x0 ls1d_std_timer.o
+ .bss           0x0000000000000000        0x0 ls1d_std_timer.o
+ .text.TIM_Init
+                0x0000000000000000       0x70 ls1d_std_timer.o
+ .text.TIM_StructInit
+                0x0000000000000000       0x50 ls1d_std_timer.o
+ .text.TIM_Cmd  0x0000000000000000       0x20 ls1d_std_timer.o
+ .text.TIM_ITConfig
+                0x0000000000000000       0x40 ls1d_std_timer.o
+ .text.TIM_GetCounter
+                0x0000000000000000       0x10 ls1d_std_timer.o
+ .text.TIM_SetCounter
+                0x0000000000000000       0x10 ls1d_std_timer.o
+ .text.TIM_SetCompare
+                0x0000000000000000       0x10 ls1d_std_timer.o
+ .text.TIM_GetCompare
+                0x0000000000000000       0x10 ls1d_std_timer.o
+ .text.TIM_GetITStatus
+                0x0000000000000000       0x10 ls1d_std_timer.o
+ .text          0x0000000000000000        0x0 ls1d_std_flash.o
+ .data          0x0000000000000000        0x0 ls1d_std_flash.o
+ .bss           0x0000000000000000        0x0 ls1d_std_flash.o
+ .text.FLASH_ErasePage
+                0x0000000000000000       0x60 ls1d_std_flash.o
+ .text.FLASH_EraseUserFlash
+                0x0000000000000000       0xe0 ls1d_std_flash.o
+ .text.FLASH_ReadPage
+                0x0000000000000000       0x50 ls1d_std_flash.o
+ .text.FLASH_WritePage
+                0x0000000000000000      0x2f0 ls1d_std_flash.o
+ .text.Flash_WriteBuffer
+                0x0000000000000000       0xb0 ls1d_std_flash.o
+ .text.FLASH_WaitForPeEnd
+                0x0000000000000000       0x50 ls1d_std_flash.o
+ .text.FLASH_GetStatus
+                0x0000000000000000       0x10 ls1d_std_flash.o
+ .text.FLASH_GetFlagStatus
+                0x0000000000000000       0x20 ls1d_std_flash.o
+ .text.FLASH_ITConfig
+                0x0000000000000000       0x30 ls1d_std_flash.o
+ .text.FLASH_ITCmd
+                0x0000000000000000       0x30 ls1d_std_flash.o
+ COMMON         0x0000000000000000        0x4 ls1d_std_flash.o
+ .text          0x0000000000000000        0x0 ls1d_std_lcd.o
+ .data          0x0000000000000000        0x0 ls1d_std_lcd.o
+ .bss           0x0000000000000000        0x0 ls1d_std_lcd.o
+ .text.LCD_NumCls
+                0x0000000000000000       0xf0 ls1d_std_lcd.o
+ .text.LCD_Num0
+                0x0000000000000000      0x1b0 ls1d_std_lcd.o
+ .text.LCD_Num1
+                0x0000000000000000      0x130 ls1d_std_lcd.o
+ .text.LCD_Num2
+                0x0000000000000000      0x190 ls1d_std_lcd.o
+ .text.LCD_Num3
+                0x0000000000000000      0x190 ls1d_std_lcd.o
+ .text.LCD_Num4
+                0x0000000000000000      0x170 ls1d_std_lcd.o
+ .text.LCD_Num5
+                0x0000000000000000      0x190 ls1d_std_lcd.o
+ .text.LCD_Num6
+                0x0000000000000000      0x1b0 ls1d_std_lcd.o
+ .text.LCD_Num7
+                0x0000000000000000      0x150 ls1d_std_lcd.o
+ .text.LCD_Num8
+                0x0000000000000000      0x1d0 ls1d_std_lcd.o
+ .text.LCD_Num9
+                0x0000000000000000      0x1b0 ls1d_std_lcd.o
+ .text.LCD_StrO
+                0x0000000000000000       0xd0 ls1d_std_lcd.o
+ .text.LCD_StrN
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrF
+                0x0000000000000000       0x90 ls1d_std_lcd.o
+ .text.LCD_StrE
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrH
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrS
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrP
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrB
+                0x0000000000000000       0xf0 ls1d_std_lcd.o
+ .text.LCD_StrR
+                0x0000000000000000       0xd0 ls1d_std_lcd.o
+ .text.LCD_StrU
+                0x0000000000000000       0xb0 ls1d_std_lcd.o
+ .text.LCD_StrT
+                0x0000000000000000       0x70 ls1d_std_lcd.o
+ .text.LCD_StrL
+                0x0000000000000000       0x70 ls1d_std_lcd.o
+ .text.LCD_Dot  0x0000000000000000       0x30 ls1d_std_lcd.o
+ .text.LCD_MaoHao
+                0x0000000000000000       0x50 ls1d_std_lcd.o
+ .text.LCD_JianHao
+                0x0000000000000000       0x30 ls1d_std_lcd.o
+ .text.LCD_LeftBrace
+                0x0000000000000000       0x90 ls1d_std_lcd.o
+ .text.LCD_RightBrace
+                0x0000000000000000       0x90 ls1d_std_lcd.o
+ .rodata.LCD_Conver_Num.str1.4
+                0x0000000000000000       0x4f ls1d_std_lcd.o
+ .text.LCD_Conver_Num
+                0x0000000000000000       0x70 ls1d_std_lcd.o
+ .rodata.LCD_Conver_Num
+                0x0000000000000000       0x28 ls1d_std_lcd.o
+ .rodata.LCD_Conver_Symbol.str1.4
+                0x0000000000000000        0xd ls1d_std_lcd.o
+ .text.LCD_Conver_Symbol
+                0x0000000000000000      0x1c0 ls1d_std_lcd.o
+ .rodata.LCD_Conver_Symbol
+                0x0000000000000000       0xc4 ls1d_std_lcd.o
+ .text.Num2LcdNum
+                0x0000000000000000      0x190 ls1d_std_lcd.o
+ .text.LCD_Disp
+                0x0000000000000000       0xa0 ls1d_std_lcd.o
+ .text.LCD_Dis_Init
+                0x0000000000000000       0x20 ls1d_std_lcd.o
+ .text.LCD_Dis_Cls
+                0x0000000000000000       0x20 ls1d_std_lcd.o
+ .rodata.g_seg_dot
+                0x0000000000000000        0x7 ls1d_std_lcd.o
+ .rodata.g_seg_num
+                0x0000000000000000       0x38 ls1d_std_lcd.o
+ .debug_info    0x0000000000000000      0xa99 ls1d_std_lcd.o
+ .debug_abbrev  0x0000000000000000      0x265 ls1d_std_lcd.o
+ .debug_loc     0x0000000000000000      0x3e0 ls1d_std_lcd.o
+ .debug_aranges
+                0x0000000000000000      0x128 ls1d_std_lcd.o
+ .debug_ranges  0x0000000000000000      0x118 ls1d_std_lcd.o
+ .debug_line    0x0000000000000000      0x909 ls1d_std_lcd.o
+ .debug_str     0x0000000000000000      0x365 ls1d_std_lcd.o
+ .comment       0x0000000000000000       0x3b ls1d_std_lcd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_lcd.o
+ .debug_frame   0x0000000000000000      0x2dc ls1d_std_lcd.o
+ COMMON         0x0000000000000000        0xc ls1d_std_lcd.o
+ .text          0x0000000000000000        0x0 ls1d_std_printf.o
+ .data          0x0000000000000000        0x0 ls1d_std_printf.o
+ .bss           0x0000000000000000        0x0 ls1d_std_printf.o
+ .text.myputchar
+                0x0000000000000000       0x20 ls1d_std_printf.o
+ .rodata.printBuf.str1.4
+                0x0000000000000000        0x7 ls1d_std_printf.o
+ .text.printBuf
+                0x0000000000000000       0x70 ls1d_std_printf.o
+ .text          0x0000000000000000        0x0 ls1d_std_str_other.o
+ .data          0x0000000000000000        0x0 ls1d_std_str_other.o
+ .bss           0x0000000000000000        0x0 ls1d_std_str_other.o
+ .text.memcmp   0x0000000000000000       0x50 ls1d_std_str_other.o
+ .text.memcpy   0x0000000000000000       0x30 ls1d_std_str_other.o
+ .text.strcpy   0x0000000000000000       0x20 ls1d_std_str_other.o
+ .text.strstr   0x0000000000000000       0x50 ls1d_std_str_other.o
+ .text.strchr   0x0000000000000000       0x40 ls1d_std_str_other.o
+ .rodata.itoa.str1.4
+                0x0000000000000000       0x11 ls1d_std_str_other.o
+ .text.itoa     0x0000000000000000       0xf0 ls1d_std_str_other.o
+ .text.strlen   0x0000000000000000       0x40 ls1d_std_str_other.o
+ .text.lowtocap
+                0x0000000000000000       0x30 ls1d_std_str_other.o
+ .text.AsciiToHex
+                0x0000000000000000      0x1c0 ls1d_std_str_other.o
+ .text.HexToAscii
+                0x0000000000000000       0xa0 ls1d_std_str_other.o
+ .text          0x0000000000000000        0x0 ls1d_std_clock.o
+ .data          0x0000000000000000        0x0 ls1d_std_clock.o
+ .bss           0x0000000000000000        0x0 ls1d_std_clock.o
+ .text.CLOCK_EnableSysTick
+                0x0000000000000000       0x10 ls1d_std_clock.o
+ .text.CLOCK_DisableSysTick
+                0x0000000000000000       0x10 ls1d_std_clock.o
+ .text.CLOCK_SetCpuTimer
+                0x0000000000000000       0x10 ls1d_std_clock.o
+ .text.CLOCK_StopCpuTimer
+                0x0000000000000000       0x30 ls1d_std_clock.o
+ .text.Wake_Set
+                0x0000000000000000       0x50 ls1d_std_clock.o
+ .text.CLOCK_GetPmuCount
+                0x0000000000000000       0x10 ls1d_std_clock.o
+ .text.CLOCK_SetStartTimerCount
+                0x0000000000000000       0x10 ls1d_std_clock.o
+ .text.CLOCK_GetTimerCountInterval
+                0x0000000000000000       0x20 ls1d_std_clock.o
+ .text.Wake_256sec_Set
+                0x0000000000000000       0x50 ls1d_std_clock.o
+ .text          0x0000000000000000        0x0 UserLcd.o
+ .data          0x0000000000000000        0x0 UserLcd.o
+ .bss           0x0000000000000000        0x0 UserLcd.o
+ .text.LCD_Init
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_TotalCubic
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_MeterNummber
+                0x0000000000000000       0x80 UserLcd.o
+ .text.Screen_Signal
+                0x0000000000000000       0x60 UserLcd.o
+ .text.Screen_BatteryPower
+                0x0000000000000000       0x40 UserLcd.o
+ .text.Screen_Temperature
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_FlowSpeed
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_Time
+                0x0000000000000000      0x160 UserLcd.o
+ .text.Screen_VerificationTotalCubic
+                0x0000000000000000       0x60 UserLcd.o
+ .text.Screen_ExValueOpen
+                0x0000000000000000       0x20 UserLcd.o
+ .text.Screen_ExValueClose
+                0x0000000000000000       0x20 UserLcd.o
+ .text.Screen_ExLowPower
+                0x0000000000000000       0x20 UserLcd.o
+ .text.Screen_ForwardWater
+                0x0000000000000000       0x20 UserLcd.o
+ .text.Screen_BackwardWater
+                0x0000000000000000       0x20 UserLcd.o
+ .text.Screen_ExVerificationMode
+                0x0000000000000000       0x30 UserLcd.o
+ .text.Screen_ParameterInfo
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_HistoryInfo
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_SystemStateInfo
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_ErrorInfo
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_GoBack
+                0x0000000000000000       0x50 UserLcd.o
+ .text.Screen_SoftReset
+                0x0000000000000000       0x70 UserLcd.o
+ .text.Screen_ClearCapacity
+                0x0000000000000000       0xc0 UserLcd.o
+ .text.Screen_TotalTime
+                0x0000000000000000       0x30 UserLcd.o
+ .debug_info    0x0000000000000000      0xd04 UserLcd.o
+ .debug_abbrev  0x0000000000000000      0x20d UserLcd.o
+ .debug_loc     0x0000000000000000      0x312 UserLcd.o
+ .debug_aranges
+                0x0000000000000000       0xd0 UserLcd.o
+ .debug_ranges  0x0000000000000000       0xc0 UserLcd.o
+ .debug_line    0x0000000000000000      0x69e UserLcd.o
+ .debug_str     0x0000000000000000      0x493 UserLcd.o
+ .comment       0x0000000000000000       0x3b UserLcd.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserLcd.o
+ .debug_frame   0x0000000000000000      0x2a0 UserLcd.o
+ .text          0x0000000000000000        0x0 UserUart.o
+ .data          0x0000000000000000        0x0 UserUart.o
+ .bss           0x0000000000000000        0x0 UserUart.o
+ .text.Uart1_Init
+                0x0000000000000000       0x60 UserUart.o
+ .text.Uart0_Init
+                0x0000000000000000       0xa0 UserUart.o
+ .text.UartIrSend
+                0x0000000000000000       0xa0 UserUart.o
+ .text          0x0000000000000000        0x0 w25q16.o
+ .data          0x0000000000000000        0x0 w25q16.o
+ .bss           0x0000000000000000        0x0 w25q16.o
+ .text.W25Q16WriteSR
+                0x0000000000000000       0x40 w25q16.o
+ .text.W25Q16WriteDisable
+                0x0000000000000000       0x20 w25q16.o
+ .text.W25Q16PowerDown
+                0x0000000000000000       0x30 w25q16.o
+ .text.W25Q16WakeUp
+                0x0000000000000000       0x30 w25q16.o
+ .text.W25Q16ReadChipID
+                0x0000000000000000       0x50 w25q16.o
+ .text.W25Q16Block32Erase
+                0x0000000000000000       0x50 w25q16.o
+ .text.W25Q16Block64Erase
+                0x0000000000000000       0x50 w25q16.o
+ .text.W25Q16ChipErase
+                0x0000000000000000       0x30 w25q16.o
+ .text.W25Q16WriteBuffer
+                0x0000000000000000       0xc0 w25q16.o
+ .text.sFlash_PageAlignedProgram
+                0x0000000000000000       0xb0 w25q16.o
+ .text.sFlash_SectorAlignedProgram
+                0x0000000000000000       0xb0 w25q16.o
+ .text.sFlash_AnywhereProgram
+                0x0000000000000000       0x70 w25q16.o
+ .text          0x0000000000000000        0x0 UserClock.o
+ .data          0x0000000000000000        0x0 UserClock.o
+ .bss           0x0000000000000000        0x0 UserClock.o
+ .text          0x0000000000000000        0x0 UserRtc.o
+ .data          0x0000000000000000        0x0 UserRtc.o
+ .bss           0x0000000000000000        0x0 UserRtc.o
+ .text.RTCInit  0x0000000000000000       0x50 UserRtc.o
+ .debug_info    0x0000000000000000      0x255 UserRtc.o
+ .debug_abbrev  0x0000000000000000       0xfd UserRtc.o
+ .debug_aranges
+                0x0000000000000000       0x20 UserRtc.o
+ .debug_ranges  0x0000000000000000       0x10 UserRtc.o
+ .debug_line    0x0000000000000000      0x188 UserRtc.o
+ .debug_str     0x0000000000000000      0x23f UserRtc.o
+ .comment       0x0000000000000000       0x3b UserRtc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserRtc.o
+ .debug_frame   0x0000000000000000       0x2c UserRtc.o
+ .text          0x0000000000000000        0x0 UserMeasure.o
+ .data          0x0000000000000000        0x0 UserMeasure.o
+ .bss           0x0000000000000000        0x0 UserMeasure.o
+ .text.MeasureSonarInit
+                0x0000000000000000       0x50 UserMeasure.o
+ .text.floatcalc
+                0x0000000000000000       0x10 UserMeasure.o
+ .rodata.MeasureAmcTask.str1.4
+                0x0000000000000000       0x54 UserMeasure.o
+ .text.MeasureAmcTask
+                0x0000000000000000      0x1d0 UserMeasure.o
+ .rodata.MeasureVrefTask.str1.4
+                0x0000000000000000       0x5a UserMeasure.o
+ .text.MeasureVrefTask
+                0x0000000000000000      0x140 UserMeasure.o
+ .rodata.PrintfSonarRegister.str1.4
+                0x0000000000000000       0x95 UserMeasure.o
+ .text.PrintfSonarRegister
+                0x0000000000000000      0x140 UserMeasure.o
+ .text.GetfValue
+                0x0000000000000000       0x10 UserMeasure.o
+ .rodata.MeasureCuriseTask.str1.4
+                0x0000000000000000       0x5d UserMeasure.o
+ .rodata        0x0000000000000000       0x18 UserMeasure.o
+ .text.MeasureCuriseTask
+                0x0000000000000000      0x230 UserMeasure.o
+ .rodata.MeasureWaveWideTask.str1.4
+                0x0000000000000000       0x7e UserMeasure.o
+ .text.MeasureWaveWideTask
+                0x0000000000000000      0x230 UserMeasure.o
+ .text.StandardMeasureInit
+                0x0000000000000000      0x100 UserMeasure.o
+ .rodata.MeasureDataProcess.str1.4
+                0x0000000000000000       0x19 UserMeasure.o
+ .text.MeasureDataProcess
+                0x0000000000000000      0x150 UserMeasure.o
+ .rodata.flter_num
+                0x0000000000000000        0x1 UserMeasure.o
+ .rodata.hit_num
+                0x0000000000000000        0x1 UserMeasure.o
+ .bss.resvalid_flag
+                0x0000000000000000        0x1 UserMeasure.o
+ .debug_info    0x0000000000000000     0x230e UserMeasure.o
+ .debug_abbrev  0x0000000000000000      0x3c7 UserMeasure.o
+ .debug_loc     0x0000000000000000      0x60a UserMeasure.o
+ .debug_aranges
+                0x0000000000000000       0x68 UserMeasure.o
+ .debug_ranges  0x0000000000000000       0x80 UserMeasure.o
+ .debug_line    0x0000000000000000      0x829 UserMeasure.o
+ .debug_str     0x0000000000000000     0x11d6 UserMeasure.o
+ .comment       0x0000000000000000       0x3b UserMeasure.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserMeasure.o
+ .debug_frame   0x0000000000000000      0x170 UserMeasure.o
+ COMMON         0x0000000000000000       0x58 UserMeasure.o
+ .text          0x0000000000000000        0x0 GlobalDef.o
+ .data          0x0000000000000000        0x0 GlobalDef.o
+ .bss           0x0000000000000000        0x0 GlobalDef.o
+ .text.SetSystemErrorLogInfo
+                0x0000000000000000       0x10 GlobalDef.o
+ .text.ResetSystemErrorLogInfo
+                0x0000000000000000       0x10 GlobalDef.o
+ .text.GetSystemErrorLogInfo
+                0x0000000000000000       0x10 GlobalDef.o
+ .bss.ErrorLog  0x0000000000000000        0x2 GlobalDef.o
+ .text          0x0000000000000000        0x0 UserTimer.o
+ .data          0x0000000000000000        0x0 UserTimer.o
+ .bss           0x0000000000000000        0x0 UserTimer.o
+ .text.TimerInit
+                0x0000000000000000       0x60 UserTimer.o
+ .debug_info    0x0000000000000000      0x207 UserTimer.o
+ .debug_abbrev  0x0000000000000000       0xf1 UserTimer.o
+ .debug_aranges
+                0x0000000000000000       0x20 UserTimer.o
+ .debug_ranges  0x0000000000000000       0x10 UserTimer.o
+ .debug_line    0x0000000000000000       0xea UserTimer.o
+ .debug_str     0x0000000000000000      0x235 UserTimer.o
+ .comment       0x0000000000000000       0x3b UserTimer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserTimer.o
+ .debug_frame   0x0000000000000000       0x2c UserTimer.o
+ .text          0x0000000000000000        0x0 UserGpio.o
+ .data          0x0000000000000000        0x0 UserGpio.o
+ .bss           0x0000000000000000        0x0 UserGpio.o
+ .text.GPIO_LowPower
+                0x0000000000000000       0xa0 UserGpio.o
+ .text.GPIO_LCDResume
+                0x0000000000000000       0x10 UserGpio.o
+ .text.GPIO_AdcResume
+                0x0000000000000000       0x10 UserGpio.o
+ .text.GPIO_Uart1ReInit
+                0x0000000000000000       0x40 UserGpio.o
+ .text.GPIO_Uart0Resume
+                0x0000000000000000       0x30 UserGpio.o
+ .text.GPIO_Uart1Resume
+                0x0000000000000000       0x40 UserGpio.o
+ .text.Uart0_LowPower
+                0x0000000000000000       0x90 UserGpio.o
+ .text.Uart1_LowPower
+                0x0000000000000000       0x80 UserGpio.o
+ .text.I2C_LowPower
+                0x0000000000000000       0x70 UserGpio.o
+ .text.GPIO_I2cResume
+                0x0000000000000000       0x40 UserGpio.o
+ .text.SPI_LowPower
+                0x0000000000000000       0x10 UserGpio.o
+ .text.GPIO_SpiResume
+                0x0000000000000000       0x10 UserGpio.o
+ .text          0x0000000000000000        0x0 Filter.o
+ .data          0x0000000000000000        0x0 Filter.o
+ .bss           0x0000000000000000        0x0 Filter.o
+ .text.InitRectWindowFilter
+                0x0000000000000000       0x30 Filter.o
+ .text.InitMedianFilter
+                0x0000000000000000       0x40 Filter.o
+ .text.FreeFilter
+                0x0000000000000000       0x30 Filter.o
+ .text.RectWindowFilter
+                0x0000000000000000       0xf0 Filter.o
+ .text.GetMeanValue
+                0x0000000000000000       0x40 Filter.o
+ .rodata.MedianFilter.str1.4
+                0x0000000000000000       0x20 Filter.o
+ .text.MedianFilter
+                0x0000000000000000      0x3a0 Filter.o
+ .rodata.cst4   0x0000000000000000        0x8 Filter.o
+ .debug_info    0x0000000000000000      0x5fa Filter.o
+ .debug_abbrev  0x0000000000000000      0x1ec Filter.o
+ .debug_loc     0x0000000000000000      0x56f Filter.o
+ .debug_aranges
+                0x0000000000000000       0x48 Filter.o
+ .debug_ranges  0x0000000000000000       0x38 Filter.o
+ .debug_line    0x0000000000000000      0x5a2 Filter.o
+ .debug_str     0x0000000000000000      0x30b Filter.o
+ .comment       0x0000000000000000       0x3b Filter.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 Filter.o
+ .debug_frame   0x0000000000000000       0x98 Filter.o
+ COMMON         0x0000000000000000       0x38 Filter.o
+ .text          0x0000000000000000        0x0 UserI2c.o
+ .data          0x0000000000000000        0x0 UserI2c.o
+ .bss           0x0000000000000000        0x0 UserI2c.o
+ .debug_info    0x0000000000000000       0x75 UserI2c.o
+ .debug_abbrev  0x0000000000000000       0x48 UserI2c.o
+ .debug_aranges
+                0x0000000000000000       0x18 UserI2c.o
+ .debug_line    0x0000000000000000       0x71 UserI2c.o
+ .debug_str     0x0000000000000000      0x174 UserI2c.o
+ .comment       0x0000000000000000       0x3b UserI2c.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserI2c.o
+ .text          0x0000000000000000        0x0 main.o
+ .data          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .data.data_test
+                0x0000000000000000        0x4 main.o
+ .text          0x0000000000000000        0x0 ls1d_std_Interrupt.o
+ .data          0x0000000000000000        0x0 ls1d_std_Interrupt.o
+ .bss           0x0000000000000000        0x0 ls1d_std_Interrupt.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x000000001c000000 0x0000000000020000 r
+ram0             0x0000000010000000 0x0000000000001000 rw
+ram1             0x0000000010001000 0x0000000000001000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x000000001c000000     0x3590
+                0x000000001c000000                . = ALIGN (0x4)
+ *(.text .text.*)
+ .text._start   0x000000001c000000     0x139c start.o
+                0x000000001c000014                _start
+                0x000000001c001250                cpu_wait
+                0x000000001c001258                cpu_sleep
+                0x000000001c001304                wakeup_reset
+ *fill*         0x000000001c00139c        0x4 
+ .text.UART_Init
+                0x000000001c0013a0      0x180 ls1d_std_uart.o
+                0x000000001c0013a0                UART_Init
+ .text.UART_StructInit
+                0x000000001c001520       0x30 ls1d_std_uart.o
+                0x000000001c001520                UART_StructInit
+ .text.UART_ITConfig
+                0x000000001c001550       0x40 ls1d_std_uart.o
+                0x000000001c001550                UART_ITConfig
+ .text.UART_ITCmd
+                0x000000001c001590       0x70 ls1d_std_uart.o
+                0x000000001c001590                UART_ITCmd
+ .text.UART_SendData
+                0x000000001c001600       0x10 ls1d_std_uart.o
+                0x000000001c001600                UART_SendData
+ .text.UART_GetFlagStatus
+                0x000000001c001610       0x10 ls1d_std_uart.o
+                0x000000001c001610                UART_GetFlagStatus
+ .text.UART_GetITStatus
+                0x000000001c001620       0x10 ls1d_std_uart.o
+                0x000000001c001620                UART_GetITStatus
+ .text.UART_ClearIT
+                0x000000001c001630       0x40 ls1d_std_uart.o
+                0x000000001c001630                UART_ClearIT
+ .text.UART_ClearITFifo
+                0x000000001c001670       0x10 ls1d_std_uart.o
+                0x000000001c001670                UART_ClearITFifo
+ .text.Spi_FreqDiv
+                0x000000001c001680       0x70 ls1d_std_spi.o
+                0x000000001c001680                Spi_FreqDiv
+ .text.SPI_Init
+                0x000000001c0016f0      0x170 ls1d_std_spi.o
+                0x000000001c0016f0                SPI_Init
+ .text.SPI_StructInit
+                0x000000001c001860       0x30 ls1d_std_spi.o
+                0x000000001c001860                SPI_StructInit
+ .text.SPI_ClearIT
+                0x000000001c001890       0x30 ls1d_std_spi.o
+                0x000000001c001890                SPI_ClearIT
+ .text.SPI_TransByte
+                0x000000001c0018c0       0xd0 ls1d_std_spi.o
+                0x000000001c0018c0                SPI_TransByte
+ .text.SpiFlashCsn0Enable
+                0x000000001c001990       0x10 ls1d_std_spi.o
+                0x000000001c001990                SpiFlashCsn0Enable
+ .text.SpiFlashCsn0Disable
+                0x000000001c0019a0       0x10 ls1d_std_spi.o
+                0x000000001c0019a0                SpiFlashCsn0Disable
+ .text.GPIO_PinRemapConfig
+                0x000000001c0019b0       0x70 ls1d_std_gpio.o
+                0x000000001c0019b0                GPIO_PinRemapConfig
+ .text.MEASURE_ITConfig
+                0x000000001c001a20       0x50 ls1d_std_measure.o
+                0x000000001c001a20                MEASURE_ITConfig
+ .text.MEASURE_ClearIT
+                0x000000001c001a70       0x20 ls1d_std_measure.o
+                0x000000001c001a70                MEASURE_ClearIT
+ .text.MEASURE_ClearResITAndReadFlag
+                0x000000001c001a90       0x10 ls1d_std_measure.o
+                0x000000001c001a90                MEASURE_ClearResITAndReadFlag
+ .text.EXTI_EnableInt
+                0x000000001c001aa0       0x10 ls1d_std_exti.o
+                0x000000001c001aa0                EXTI_EnableInt
+ .text.EXTI_ClearITPendingBit
+                0x000000001c001ab0       0x20 ls1d_std_exti.o
+                0x000000001c001ab0                EXTI_ClearITPendingBit
+ .text.POWER_GetResetSource
+                0x000000001c001ad0       0x10 ls1d_std_power.o
+                0x000000001c001ad0                POWER_GetResetSource
+ .text.WDG_SetWatchDog
+                0x000000001c001ae0       0x30 ls1d_std_wdg.o
+                0x000000001c001ae0                WDG_SetWatchDog
+ .text.WDG_DogFeed
+                0x000000001c001b10       0x20 ls1d_std_wdg.o
+                0x000000001c001b10                WDG_DogFeed
+ .text.TIM_ClearIT
+                0x000000001c001b30       0x30 ls1d_std_timer.o
+                0x000000001c001b30                TIM_ClearIT
+ .text.FLASH_ClearIT
+                0x000000001c001b60       0x30 ls1d_std_flash.o
+                0x000000001c001b60                FLASH_ClearIT
+ .text.printbase
+                0x000000001c001b90      0x130 ls1d_std_printf.o
+                0x000000001c001b90                printbase
+ .text.puts     0x000000001c001cc0       0xa0 ls1d_std_printf.o
+                0x000000001c001cc0                puts
+ .text.myprintf
+                0x000000001c001d60      0x2c0 ls1d_std_printf.o
+                0x000000001c001d60                myprintf
+ .text.memset   0x000000001c002020       0x20 ls1d_std_str_other.o
+                0x000000001c002020                memset
+ .text.CLOCK_WaitForHSEStartUp
+                0x000000001c002040       0x80 ls1d_std_clock.o
+                0x000000001c002040                CLOCK_WaitForHSEStartUp
+ .text.CLOCK_WaitForLSEStartUp
+                0x000000001c0020c0       0xb0 ls1d_std_clock.o
+                0x000000001c0020c0                CLOCK_WaitForLSEStartUp
+ .text.CLOCK_LSEConfig
+                0x000000001c002170       0x80 ls1d_std_clock.o
+                0x000000001c002170                CLOCK_LSEConfig
+ .text.CLOCK_StructInit
+                0x000000001c0021f0       0x40 ls1d_std_clock.o
+                0x000000001c0021f0                CLOCK_StructInit
+ .text.CLOCK_GetFlagStatus
+                0x000000001c002230       0x80 ls1d_std_clock.o
+                0x000000001c002230                CLOCK_GetFlagStatus
+ .text.CLOCK_GetClocksFreq
+                0x000000001c0022b0       0x50 ls1d_std_clock.o
+                0x000000001c0022b0                CLOCK_GetClocksFreq
+ .text.CLOCK_HSEConfig
+                0x000000001c002300       0xb0 ls1d_std_clock.o
+                0x000000001c002300                CLOCK_HSEConfig
+ .text.CLOCK_Init
+                0x000000001c0023b0       0x90 ls1d_std_clock.o
+                0x000000001c0023b0                CLOCK_Init
+ .text.CLOCK_ClearCpuTimerIT
+                0x000000001c002440       0x10 ls1d_std_clock.o
+                0x000000001c002440                CLOCK_ClearCpuTimerIT
+ .text.CLOCK_DelayUs
+                0x000000001c002450       0x50 ls1d_std_clock.o
+                0x000000001c002450                CLOCK_DelayUs
+ .text.CLOCK_DelayMs
+                0x000000001c0024a0       0x50 ls1d_std_clock.o
+                0x000000001c0024a0                CLOCK_DelayMs
+ .text.CLOCK_DelayS
+                0x000000001c0024f0       0x60 ls1d_std_clock.o
+                0x000000001c0024f0                CLOCK_DelayS
+ .text.UartInit
+                0x000000001c002550       0xd0 UserUart.o
+                0x000000001c002550                UartInit
+ .text.W25Q16ReadSR
+                0x000000001c002620       0x40 w25q16.o
+                0x000000001c002620                W25Q16ReadSR
+ .text.W25Q16WaitBusy
+                0x000000001c002660       0x30 w25q16.o
+                0x000000001c002660                W25Q16WaitBusy
+ .text.W25Q16WriteEnable
+                0x000000001c002690       0x30 w25q16.o
+                0x000000001c002690                W25Q16WriteEnable
+ .text.W25Q16FlashRead
+                0x000000001c0026c0       0x90 w25q16.o
+                0x000000001c0026c0                W25Q16FlashRead
+ .text.W25Q16FlashWrite
+                0x000000001c002750       0x90 w25q16.o
+                0x000000001c002750                W25Q16FlashWrite
+ .text.W25Q16ReadID
+                0x000000001c0027e0       0x70 w25q16.o
+                0x000000001c0027e0                W25Q16ReadID
+ .text.W25Q16SectorErase
+                0x000000001c002850       0x50 w25q16.o
+                0x000000001c002850                W25Q16SectorErase
+ .text.FlashTestTask
+                0x000000001c0028a0      0x210 w25q16.o
+                0x000000001c0028a0                FlashTestTask
+ .text.SystemClock
+                0x000000001c002ab0       0x40 UserClock.o
+                0x000000001c002ab0                SystemClock
+ .text.GPIOInit
+                0x000000001c002af0       0x10 UserGpio.o
+                0x000000001c002af0                GPIOInit
+ .text.startup.main
+                0x000000001c002b00      0x150 main.o
+                0x000000001c002b00                main
+ .text.ExtGpioA0_IRQHandler
+                0x000000001c002c50       0x30 ls1d_std_Interrupt.o
+                0x000000001c002c50                ExtGpioA0_IRQHandler
+ .text.ExtGpioA1_IRQHandler
+                0x000000001c002c80       0x30 ls1d_std_Interrupt.o
+                0x000000001c002c80                ExtGpioA1_IRQHandler
+ .text.ExtGpioA2_IRQHandler
+                0x000000001c002cb0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002cb0                ExtGpioA2_IRQHandler
+ .text.ExtGpioA3_IRQHandler
+                0x000000001c002ce0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002ce0                ExtGpioA3_IRQHandler
+ .text.ExtGpioA4_IRQHandler
+                0x000000001c002d10       0x30 ls1d_std_Interrupt.o
+                0x000000001c002d10                ExtGpioA4_IRQHandler
+ .text.ExtGpioA5_IRQHandler
+                0x000000001c002d40       0x30 ls1d_std_Interrupt.o
+                0x000000001c002d40                ExtGpioA5_IRQHandler
+ .text.ExtGpioA6_IRQHandler
+                0x000000001c002d70       0x30 ls1d_std_Interrupt.o
+                0x000000001c002d70                ExtGpioA6_IRQHandler
+ .text.ExtGpioA7_IRQHandler
+                0x000000001c002da0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002da0                ExtGpioA7_IRQHandler
+ .text.ExtGpioA8_IRQHandler
+                0x000000001c002dd0       0x10 ls1d_std_Interrupt.o
+                0x000000001c002dd0                ExtGpioA8_IRQHandler
+ .text.ExtGpioA9_IRQHandler
+                0x000000001c002de0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002de0                ExtGpioA9_IRQHandler
+ .text.ExtGpioA10_IRQHandler
+                0x000000001c002e10       0x30 ls1d_std_Interrupt.o
+                0x000000001c002e10                ExtGpioA10_IRQHandler
+ .text.ExtGpioA11_IRQHandler
+                0x000000001c002e40       0x30 ls1d_std_Interrupt.o
+                0x000000001c002e40                ExtGpioA11_IRQHandler
+ .text.ExtGpioA12_IRQHandler
+                0x000000001c002e70       0x30 ls1d_std_Interrupt.o
+                0x000000001c002e70                ExtGpioA12_IRQHandler
+ .text.ExtGpioA13_IRQHandler
+                0x000000001c002ea0       0x10 ls1d_std_Interrupt.o
+                0x000000001c002ea0                ExtGpioA13_IRQHandler
+ .text.ExtGpioA14_IRQHandler
+                0x000000001c002eb0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002eb0                ExtGpioA14_IRQHandler
+ .text.ExtGpioA15_IRQHandler
+                0x000000001c002ee0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002ee0                ExtGpioA15_IRQHandler
+ .text.ExtGpioB0_IRQHandler
+                0x000000001c002f10       0x30 ls1d_std_Interrupt.o
+                0x000000001c002f10                ExtGpioB0_IRQHandler
+ .text.ExtGpioB1_IRQHandler
+                0x000000001c002f40       0x30 ls1d_std_Interrupt.o
+                0x000000001c002f40                ExtGpioB1_IRQHandler
+ .text.ExtGpioB2_IRQHandler
+                0x000000001c002f70       0x30 ls1d_std_Interrupt.o
+                0x000000001c002f70                ExtGpioB2_IRQHandler
+ .text.ExtGpioB3_IRQHandler
+                0x000000001c002fa0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002fa0                ExtGpioB3_IRQHandler
+ .text.ExtGpioB4_IRQHandler
+                0x000000001c002fd0       0x30 ls1d_std_Interrupt.o
+                0x000000001c002fd0                ExtGpioB4_IRQHandler
+ .text.ExtGpioB5_IRQHandler
+                0x000000001c003000       0x30 ls1d_std_Interrupt.o
+                0x000000001c003000                ExtGpioB5_IRQHandler
+ .text.ExtGpioB6_IRQHandler
+                0x000000001c003030       0x30 ls1d_std_Interrupt.o
+                0x000000001c003030                ExtGpioB6_IRQHandler
+ .text.ExtGpioB7_IRQHandler
+                0x000000001c003060       0x30 ls1d_std_Interrupt.o
+                0x000000001c003060                ExtGpioB7_IRQHandler
+ .text.ExtGpioB8_IRQHandler
+                0x000000001c003090       0x30 ls1d_std_Interrupt.o
+                0x000000001c003090                ExtGpioB8_IRQHandler
+ .text.ExtGpioB9_IRQHandler
+                0x000000001c0030c0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0030c0                ExtGpioB9_IRQHandler
+ .text.ExtGpioB10_IRQHandler
+                0x000000001c0030f0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0030f0                ExtGpioB10_IRQHandler
+ .text.ExtGpioB11_IRQHandler
+                0x000000001c003120       0x30 ls1d_std_Interrupt.o
+                0x000000001c003120                ExtGpioB11_IRQHandler
+ .text.ExtGpioB12_IRQHandler
+                0x000000001c003150       0x30 ls1d_std_Interrupt.o
+                0x000000001c003150                ExtGpioB12_IRQHandler
+ .text.ExtGpioB13_IRQHandler
+                0x000000001c003180       0x30 ls1d_std_Interrupt.o
+                0x000000001c003180                ExtGpioB13_IRQHandler
+ .text.ExtGpioB14_IRQHandler
+                0x000000001c0031b0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0031b0                ExtGpioB14_IRQHandler
+ .text.ExtGpioB15_IRQHandler
+                0x000000001c0031e0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0031e0                ExtGpioB15_IRQHandler
+ .text.Soft0_IRQHandler
+                0x000000001c003210       0x10 ls1d_std_Interrupt.o
+                0x000000001c003210                Soft0_IRQHandler
+ .text.Soft1_IRQHandler
+                0x000000001c003220       0x10 ls1d_std_Interrupt.o
+                0x000000001c003220                Soft1_IRQHandler
+ .text.Wake_IRQHandler
+                0x000000001c003230       0x30 ls1d_std_Interrupt.o
+                0x000000001c003230                Wake_IRQHandler
+ .text.ResValid_IRQHandler
+                0x000000001c003260       0x10 ls1d_std_Interrupt.o
+                0x000000001c003260                ResValid_IRQHandler
+ .text.BatFail_IRQHandler
+                0x000000001c003270       0x10 ls1d_std_Interrupt.o
+                0x000000001c003270                BatFail_IRQHandler
+ .text.C32kFail_IRQHandler
+                0x000000001c003280       0x30 ls1d_std_Interrupt.o
+                0x000000001c003280                C32kFail_IRQHandler
+ .text.C8mFail_IRQHandler
+                0x000000001c0032b0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0032b0                C8mFail_IRQHandler
+ .text.Key_IRQHandler
+                0x000000001c0032e0       0x10 ls1d_std_Interrupt.o
+                0x000000001c0032e0                Key_IRQHandler
+ .text.Ring_IRQHandler
+                0x000000001c0032f0       0x10 ls1d_std_Interrupt.o
+                0x000000001c0032f0                Ring_IRQHandler
+ .text.Rtc_IRQHandler
+                0x000000001c003300       0x10 ls1d_std_Interrupt.o
+                0x000000001c003300                Rtc_IRQHandler
+ .text.TIMER_IRQHandler
+                0x000000001c003310       0x10 ls1d_std_Interrupt.o
+                0x000000001c003310                TIMER_IRQHandler
+ .text.CpuTimer_IRQHandler
+                0x000000001c003320       0x10 ls1d_std_Interrupt.o
+                0x000000001c003320                CpuTimer_IRQHandler
+ .text.I2C_IRQHandler
+                0x000000001c003330       0x10 ls1d_std_Interrupt.o
+                0x000000001c003330                I2C_IRQHandler
+ .text.UART1_IRQHandler
+                0x000000001c003340       0xa0 ls1d_std_Interrupt.o
+                0x000000001c003340                UART1_IRQHandler
+ .text.UART0_IRQHandler
+                0x000000001c0033e0       0x90 ls1d_std_Interrupt.o
+                0x000000001c0033e0                UART0_IRQHandler
+ .text.FLASH_IRQHandler
+                0x000000001c003470       0x30 ls1d_std_Interrupt.o
+                0x000000001c003470                FLASH_IRQHandler
+ .text.SPI_IRQHandler
+                0x000000001c0034a0       0x30 ls1d_std_Interrupt.o
+                0x000000001c0034a0                SPI_IRQHandler
+ .text.ADC_IRQHandler
+                0x000000001c0034d0       0x40 ls1d_std_Interrupt.o
+                0x000000001c0034d0                ADC_IRQHandler
+ .text.Exint_IRQHandler
+                0x000000001c003510       0x80 ls1d_std_Interrupt.o
+                0x000000001c003510                Exint_IRQHandler
+                0x000000001c003590                . = ALIGN (0x4)
+                0x000000001c003590                _etext = .
+
+.rodata         0x000000001c003590      0x77c
+                0x000000001c003590                . = ALIGN (0x4)
+ *(.rodata .rodata.*)
+ .rodata.SPI_TransByte.str1.4
+                0x000000001c003590       0x2a ls1d_std_spi.o
+ *fill*         0x000000001c0035ba        0x2 
+ .rodata.myprintf
+                0x000000001c0035bc      0x150 ls1d_std_printf.o
+ .rodata.FlashTestTask.str1.4
+                0x000000001c00370c      0x197 w25q16.o
+ *fill*         0x000000001c0038a3        0x1 
+ .rodata.main.str1.4
+                0x000000001c0038a4       0x95 main.o
+ *fill*         0x000000001c003939        0x3 
+ .rodata.ExtGpioA0_IRQHandler.str1.4
+                0x000000001c00393c       0x21 ls1d_std_Interrupt.o
+ *fill*         0x000000001c00395d        0x3 
+ .rodata.UART0_IRQHandler.str1.4
+                0x000000001c003960       0x10 ls1d_std_Interrupt.o
+                                          0xf (size before relaxing)
+ .rodata.__FUNCTION__.2825
+                0x000000001c003970       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003986        0x2 
+ .rodata.__FUNCTION__.2821
+                0x000000001c003988       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c00399e        0x2 
+ .rodata.__FUNCTION__.2817
+                0x000000001c0039a0       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c0039b6        0x2 
+ .rodata.__FUNCTION__.2813
+                0x000000001c0039b8       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c0039ce        0x2 
+ .rodata.__FUNCTION__.2809
+                0x000000001c0039d0       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c0039e6        0x2 
+ .rodata.__FUNCTION__.2805
+                0x000000001c0039e8       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c0039fe        0x2 
+ .rodata.__FUNCTION__.2801
+                0x000000001c003a00       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a15        0x3 
+ .rodata.__FUNCTION__.2797
+                0x000000001c003a18       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a2d        0x3 
+ .rodata.__FUNCTION__.2793
+                0x000000001c003a30       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a45        0x3 
+ .rodata.__FUNCTION__.2789
+                0x000000001c003a48       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a5d        0x3 
+ .rodata.__FUNCTION__.2785
+                0x000000001c003a60       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a75        0x3 
+ .rodata.__FUNCTION__.2781
+                0x000000001c003a78       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003a8d        0x3 
+ .rodata.__FUNCTION__.2777
+                0x000000001c003a90       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003aa5        0x3 
+ .rodata.__FUNCTION__.2773
+                0x000000001c003aa8       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003abd        0x3 
+ .rodata.__FUNCTION__.2769
+                0x000000001c003ac0       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003ad5        0x3 
+ .rodata.__FUNCTION__.2765
+                0x000000001c003ad8       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003aed        0x3 
+ .rodata.__FUNCTION__.2761
+                0x000000001c003af0       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b06        0x2 
+ .rodata.__FUNCTION__.2757
+                0x000000001c003b08       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b1e        0x2 
+ .rodata.__FUNCTION__.2750
+                0x000000001c003b20       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b36        0x2 
+ .rodata.__FUNCTION__.2746
+                0x000000001c003b38       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b4e        0x2 
+ .rodata.__FUNCTION__.2742
+                0x000000001c003b50       0x16 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b66        0x2 
+ .rodata.__FUNCTION__.2738
+                0x000000001c003b68       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b7d        0x3 
+ .rodata.__FUNCTION__.2731
+                0x000000001c003b80       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003b95        0x3 
+ .rodata.__FUNCTION__.2727
+                0x000000001c003b98       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003bad        0x3 
+ .rodata.__FUNCTION__.2723
+                0x000000001c003bb0       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003bc5        0x3 
+ .rodata.__FUNCTION__.2719
+                0x000000001c003bc8       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003bdd        0x3 
+ .rodata.__FUNCTION__.2715
+                0x000000001c003be0       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003bf5        0x3 
+ .rodata.__FUNCTION__.2711
+                0x000000001c003bf8       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c0d        0x3 
+ .rodata.__FUNCTION__.2707
+                0x000000001c003c10       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c25        0x3 
+ .rodata.__FUNCTION__.2703
+                0x000000001c003c28       0x15 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c3d        0x3 
+ .rodata.__FUNCTION__.2687
+                0x000000001c003c40        0xf ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c4f        0x1 
+ .rodata.__FUNCTION__.2683
+                0x000000001c003c50       0x11 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c61        0x3 
+ .rodata.__FUNCTION__.2648
+                0x000000001c003c64       0x13 ls1d_std_Interrupt.o
+ *fill*         0x000000001c003c77        0x1 
+ .rodata.__FUNCTION__.2644
+                0x000000001c003c78       0x14 ls1d_std_Interrupt.o
+ .rodata.Ext_IrqHandle
+                0x000000001c003c8c       0x80 ls1d_std_Interrupt.o
+                0x000000001c003c8c                Ext_IrqHandle
+                0x000000001c003d0c                . = ALIGN (0x4)
+                0x000000001c003d0c                _sidata = ALIGN (., 0x4)
+                0x000000001c003d0c                . = ALIGN (0x4)
+
+.rela.dyn       0x000000001c003d0c        0x0
+ .rela.rodata.myprintf
+                0x000000001c003d0c        0x0 start.o
+ .rela.got      0x000000001c003d0c        0x0 start.o
+ .rela.rodata.Ext_IrqHandle
+                0x000000001c003d0c        0x0 start.o
+
+.data           0x0000000010001000       0x20 load address 0x000000001c003d0c
+                0x0000000010001000                _sdata = .
+                0x0000000010001000                . = ALIGN (0x4)
+ *(.got.plt)
+ .got.plt       0x0000000010001000        0x0 start.o
+                0x0000000010001000                . = ALIGN (0x4)
+ *(.got)
+ .got           0x0000000010001000       0x20 start.o
+                0x0000000010001000                _GLOBAL_OFFSET_TABLE_
+                0x0000000010001020                . = ALIGN (0x4)
+ *(.data .data.*)
+                0x0000000010001020                . = ALIGN (0x4)
+                0x0000000010001020                _edata = .
+
+.bss            0x0000000010001020       0x28 load address 0x000000001c003d2c
+                0x0000000010001020                . = ALIGN (0x4)
+                0x0000000010001020                _sbss = .
+ *(.sbss)
+                0x0000000010001020                . = ALIGN (0x4)
+ *(.bss)
+                0x0000000010001020                . = ALIGN (0x4)
+ *(.scommon)
+                0x0000000010001020                . = ALIGN (0x4)
+ *(COMMON)
+ COMMON         0x0000000010001020        0xc ls1d_std_adc.o
+                0x0000000010001020                MaxDiff
+                0x0000000010001022                MaxAdc
+                0x0000000010001024                g_adc_diff
+                0x0000000010001026                MinAdc
+                0x0000000010001028                g_adc_data
+                0x000000001000102a                MidAdc
+ COMMON         0x000000001000102c        0x8 ls1d_std_clock.o
+                0x000000001000102c                inte8m
+                0x0000000010001030                inte32K
+ COMMON         0x0000000010001034        0x2 w25q16.o
+                0x0000000010001034                devieID
+ *fill*         0x0000000010001036        0x2 
+ COMMON         0x0000000010001038        0x8 GlobalDef.o
+                0x0000000010001038                LastTask
+                0x000000001000103c                MainTask
+ COMMON         0x0000000010001040        0x8 main.o
+                0x0000000010001040                debugflag
+                0x0000000010001044                key_mode
+                0x0000000010001048                . = ALIGN (0x4)
+                0x0000000010001048                _ebss = .
+Address of section .text set to 0x1c000000
+LOAD start.o
+LOAD sonar.o
+LOAD ls1d_std_adc.o
+LOAD ls1d_std_uart.o
+LOAD ls1d_std_spi.o
+LOAD ls1d_std_gpio.o
+LOAD ls1d_std_measure.o
+LOAD ls1d_std_exti.o
+LOAD ls1d_std_power.o
+LOAD ls1d_std_rtc.o
+LOAD ls1d_std_i2c.o
+LOAD ls1d_std_wdg.o
+LOAD ls1d_std_timer.o
+LOAD ls1d_std_flash.o
+LOAD ls1d_std_lcd.o
+LOAD ls1d_std_printf.o
+LOAD ls1d_std_str_other.o
+LOAD ls1d_std_clock.o
+LOAD UserLcd.o
+LOAD UserUart.o
+LOAD w25q16.o
+LOAD UserClock.o
+LOAD UserRtc.o
+LOAD UserMeasure.o
+LOAD GlobalDef.o
+LOAD UserTimer.o
+LOAD UserGpio.o
+LOAD Filter.o
+LOAD UserI2c.o
+LOAD main.o
+LOAD ls1d_std_Interrupt.o
+OUTPUT(WaterMeterLA.elf elf32-loongarch)
+
+.bss.g_Rx1Buf   0x0000000010001048       0x64 load address 0x000000001c003d54
+ .bss.g_Rx1Buf  0x0000000010001048       0x64 ls1d_std_Interrupt.o
+                0x0000000010001048                g_Rx1Buf
+
+.bss.g_Uart1Cnt
+                0x00000000100010ac        0x1 load address 0x000000001c003db8
+ .bss.g_Uart1Cnt
+                0x00000000100010ac        0x1 ls1d_std_Interrupt.o
+                0x00000000100010ac                g_Uart1Cnt
+
+.debug_line     0x0000000000000000     0x7142
+ .debug_line    0x0000000000000000      0x11a start.o
+ .debug_line    0x000000000000011a      0x52b ls1d_std_adc.o
+ .debug_line    0x0000000000000645      0x5d7 ls1d_std_uart.o
+ .debug_line    0x0000000000000c1c      0x46d ls1d_std_spi.o
+ .debug_line    0x0000000000001089      0x367 ls1d_std_gpio.o
+ .debug_line    0x00000000000013f0     0x174d ls1d_std_measure.o
+ .debug_line    0x0000000000002b3d      0x2c0 ls1d_std_exti.o
+ .debug_line    0x0000000000002dfd      0x46f ls1d_std_power.o
+ .debug_line    0x000000000000326c       0xe8 ls1d_std_wdg.o
+ .debug_line    0x0000000000003354      0x39e ls1d_std_timer.o
+ .debug_line    0x00000000000036f2      0x9ee ls1d_std_flash.o
+ .debug_line    0x00000000000040e0      0x55a ls1d_std_printf.o
+ .debug_line    0x000000000000463a      0x644 ls1d_std_str_other.o
+ .debug_line    0x0000000000004c7e      0x7a0 ls1d_std_clock.o
+ .debug_line    0x000000000000541e      0x228 UserUart.o
+ .debug_line    0x0000000000005646      0x733 w25q16.o
+ .debug_line    0x0000000000005d79       0xe4 UserClock.o
+ .debug_line    0x0000000000005e5d       0xe6 GlobalDef.o
+ .debug_line    0x0000000000005f43      0x410 UserGpio.o
+ .debug_line    0x0000000000006353      0x28a main.o
+ .debug_line    0x00000000000065dd      0xb65 ls1d_std_Interrupt.o
+
+.debug_info     0x0000000000000000     0xbc50
+ .debug_info    0x0000000000000000       0x26 start.o
+ .debug_info    0x0000000000000026      0x733 ls1d_std_adc.o
+ .debug_info    0x0000000000000759      0x992 ls1d_std_uart.o
+ .debug_info    0x00000000000010eb      0x52f ls1d_std_spi.o
+ .debug_info    0x000000000000161a      0x524 ls1d_std_gpio.o
+ .debug_info    0x0000000000001b3e     0x2611 ls1d_std_measure.o
+ .debug_info    0x000000000000414f      0x544 ls1d_std_exti.o
+ .debug_info    0x0000000000004693      0x6fa ls1d_std_power.o
+ .debug_info    0x0000000000004d8d       0xd9 ls1d_std_wdg.o
+ .debug_info    0x0000000000004e66      0x68a ls1d_std_timer.o
+ .debug_info    0x00000000000054f0      0xc99 ls1d_std_flash.o
+ .debug_info    0x0000000000006189      0x5e4 ls1d_std_printf.o
+ .debug_info    0x000000000000676d      0x5b8 ls1d_std_str_other.o
+ .debug_info    0x0000000000006d25      0xcde ls1d_std_clock.o
+ .debug_info    0x0000000000007a03      0x749 UserUart.o
+ .debug_info    0x000000000000814c     0x10fc w25q16.o
+ .debug_info    0x0000000000009248      0x183 UserClock.o
+ .debug_info    0x00000000000093cb       0xfb GlobalDef.o
+ .debug_info    0x00000000000094c6      0xa56 UserGpio.o
+ .debug_info    0x0000000000009f1c      0x6a0 main.o
+ .debug_info    0x000000000000a5bc     0x1694 ls1d_std_Interrupt.o
+
+.debug_abbrev   0x0000000000000000     0x2d1f
+ .debug_abbrev  0x0000000000000000       0x14 start.o
+ .debug_abbrev  0x0000000000000014      0x2c6 ls1d_std_adc.o
+ .debug_abbrev  0x00000000000002da      0x2eb ls1d_std_uart.o
+ .debug_abbrev  0x00000000000005c5      0x1ec ls1d_std_spi.o
+ .debug_abbrev  0x00000000000007b1      0x202 ls1d_std_gpio.o
+ .debug_abbrev  0x00000000000009b3      0x3ad ls1d_std_measure.o
+ .debug_abbrev  0x0000000000000d60      0x1ea ls1d_std_exti.o
+ .debug_abbrev  0x0000000000000f4a      0x1b1 ls1d_std_power.o
+ .debug_abbrev  0x00000000000010fb       0xa5 ls1d_std_wdg.o
+ .debug_abbrev  0x00000000000011a0      0x1b2 ls1d_std_timer.o
+ .debug_abbrev  0x0000000000001352      0x440 ls1d_std_flash.o
+ .debug_abbrev  0x0000000000001792      0x278 ls1d_std_printf.o
+ .debug_abbrev  0x0000000000001a0a      0x1c8 ls1d_std_str_other.o
+ .debug_abbrev  0x0000000000001bd2      0x41d ls1d_std_clock.o
+ .debug_abbrev  0x0000000000001fef      0x209 UserUart.o
+ .debug_abbrev  0x00000000000021f8      0x2ad w25q16.o
+ .debug_abbrev  0x00000000000024a5       0xec UserClock.o
+ .debug_abbrev  0x0000000000002591       0xce GlobalDef.o
+ .debug_abbrev  0x000000000000265f      0x284 UserGpio.o
+ .debug_abbrev  0x00000000000028e3      0x1d0 main.o
+ .debug_abbrev  0x0000000000002ab3      0x26c ls1d_std_Interrupt.o
+
+.debug_aranges  0x0000000000000000      0xb78
+ .debug_aranges
+                0x0000000000000000       0x20 start.o
+ .debug_aranges
+                0x0000000000000020       0x58 ls1d_std_adc.o
+ .debug_aranges
+                0x0000000000000078       0x90 ls1d_std_uart.o
+ .debug_aranges
+                0x0000000000000108       0x70 ls1d_std_spi.o
+ .debug_aranges
+                0x0000000000000178       0x58 ls1d_std_gpio.o
+ .debug_aranges
+                0x00000000000001d0      0x280 ls1d_std_measure.o
+ .debug_aranges
+                0x0000000000000450       0x78 ls1d_std_exti.o
+ .debug_aranges
+                0x00000000000004c8       0xc8 ls1d_std_power.o
+ .debug_aranges
+                0x0000000000000590       0x28 ls1d_std_wdg.o
+ .debug_aranges
+                0x00000000000005b8       0x68 ls1d_std_timer.o
+ .debug_aranges
+                0x0000000000000620       0x70 ls1d_std_flash.o
+ .debug_aranges
+                0x0000000000000690       0x40 ls1d_std_printf.o
+ .debug_aranges
+                0x00000000000006d0       0x70 ls1d_std_str_other.o
+ .debug_aranges
+                0x0000000000000740       0xc0 ls1d_std_clock.o
+ .debug_aranges
+                0x0000000000000800       0x38 UserUart.o
+ .debug_aranges
+                0x0000000000000838       0xb8 w25q16.o
+ .debug_aranges
+                0x00000000000008f0       0x20 UserClock.o
+ .debug_aranges
+                0x0000000000000910       0x30 GlobalDef.o
+ .debug_aranges
+                0x0000000000000940       0x78 UserGpio.o
+ .debug_aranges
+                0x00000000000009b8       0x20 main.o
+ .debug_aranges
+                0x00000000000009d8      0x1a0 ls1d_std_Interrupt.o
+
+.debug_str      0x0000000000000000     0x2e06
+ .debug_str     0x0000000000000000       0x6d start.o
+ .debug_str     0x000000000000006d      0x34c ls1d_std_adc.o
+                                        0x3a8 (size before relaxing)
+ .debug_str     0x00000000000003b9      0x2f0 ls1d_std_uart.o
+                                        0x595 (size before relaxing)
+ .debug_str     0x00000000000006a9      0x1af ls1d_std_spi.o
+                                        0x3cf (size before relaxing)
+ .debug_str     0x0000000000000858      0x2a2 ls1d_std_gpio.o
+                                        0x479 (size before relaxing)
+ .debug_str     0x0000000000000afa      0xc6a ls1d_std_measure.o
+                                        0xf59 (size before relaxing)
+ .debug_str     0x0000000000001764      0x1ee ls1d_std_exti.o
+                                        0x480 (size before relaxing)
+ .debug_str     0x0000000000001952      0x246 ls1d_std_power.o
+                                        0x4bd (size before relaxing)
+ .debug_str     0x0000000000001b98       0x64 ls1d_std_wdg.o
+                                        0x1bb (size before relaxing)
+ .debug_str     0x0000000000001bfc      0x1d2 ls1d_std_timer.o
+                                        0x41b (size before relaxing)
+ .debug_str     0x0000000000001dce      0x246 ls1d_std_flash.o
+                                        0x548 (size before relaxing)
+ .debug_str     0x0000000000002014       0x6b ls1d_std_printf.o
+                                        0x21d (size before relaxing)
+ .debug_str     0x000000000000207f       0xc6 ls1d_std_str_other.o
+                                        0x22c (size before relaxing)
+ .debug_str     0x0000000000002145      0x2c8 ls1d_std_clock.o
+                                        0x57e (size before relaxing)
+ .debug_str     0x000000000000240d       0x78 UserUart.o
+                                        0x3b3 (size before relaxing)
+ .debug_str     0x0000000000002485      0x20d w25q16.o
+                                        0x434 (size before relaxing)
+ .debug_str     0x0000000000002692       0x45 UserClock.o
+                                        0x239 (size before relaxing)
+ .debug_str     0x00000000000026d7       0x8b GlobalDef.o
+                                        0x1d5 (size before relaxing)
+ .debug_str     0x0000000000002762      0x1bf UserGpio.o
+                                        0x5dc (size before relaxing)
+ .debug_str     0x0000000000002921       0x68 main.o
+                                        0x3fe (size before relaxing)
+ .debug_str     0x0000000000002989      0x47d ls1d_std_Interrupt.o
+                                        0x8a3 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x6fb0
+ .debug_loc     0x0000000000000000      0x374 ls1d_std_adc.o
+ .debug_loc     0x0000000000000374      0x49d ls1d_std_uart.o
+ .debug_loc     0x0000000000000811      0x2a2 ls1d_std_spi.o
+ .debug_loc     0x0000000000000ab3      0x420 ls1d_std_gpio.o
+ .debug_loc     0x0000000000000ed3     0x2b71 ls1d_std_measure.o
+ .debug_loc     0x0000000000003a44      0x131 ls1d_std_exti.o
+ .debug_loc     0x0000000000003b75      0x328 ls1d_std_power.o
+ .debug_loc     0x0000000000003e9d      0x107 ls1d_std_timer.o
+ .debug_loc     0x0000000000003fa4      0xca1 ls1d_std_flash.o
+ .debug_loc     0x0000000000004c45      0x70d ls1d_std_printf.o
+ .debug_loc     0x0000000000005352      0x94a ls1d_std_str_other.o
+ .debug_loc     0x0000000000005c9c      0x78a ls1d_std_clock.o
+ .debug_loc     0x0000000000006426      0x160 UserUart.o
+ .debug_loc     0x0000000000006586      0x995 w25q16.o
+ .debug_loc     0x0000000000006f1b       0x2c main.o
+ .debug_loc     0x0000000000006f47       0x69 ls1d_std_Interrupt.o
+
+.debug_ranges   0x0000000000000000      0xee8
+ .debug_ranges  0x0000000000000000       0xb8 ls1d_std_adc.o
+ .debug_ranges  0x00000000000000b8       0x80 ls1d_std_uart.o
+ .debug_ranges  0x0000000000000138       0x60 ls1d_std_spi.o
+ .debug_ranges  0x0000000000000198       0x48 ls1d_std_gpio.o
+ .debug_ranges  0x00000000000001e0      0x420 ls1d_std_measure.o
+ .debug_ranges  0x0000000000000600       0x68 ls1d_std_exti.o
+ .debug_ranges  0x0000000000000668       0xb8 ls1d_std_power.o
+ .debug_ranges  0x0000000000000720       0x18 ls1d_std_wdg.o
+ .debug_ranges  0x0000000000000738       0x58 ls1d_std_timer.o
+ .debug_ranges  0x0000000000000790      0x178 ls1d_std_flash.o
+ .debug_ranges  0x0000000000000908       0xa8 ls1d_std_printf.o
+ .debug_ranges  0x00000000000009b0       0x78 ls1d_std_str_other.o
+ .debug_ranges  0x0000000000000a28      0x1b8 ls1d_std_clock.o
+ .debug_ranges  0x0000000000000be0       0x28 UserUart.o
+ .debug_ranges  0x0000000000000c08       0xa8 w25q16.o
+ .debug_ranges  0x0000000000000cb0       0x10 UserClock.o
+ .debug_ranges  0x0000000000000cc0       0x20 GlobalDef.o
+ .debug_ranges  0x0000000000000ce0       0x68 UserGpio.o
+ .debug_ranges  0x0000000000000d48       0x10 main.o
+ .debug_ranges  0x0000000000000d58      0x190 ls1d_std_Interrupt.o
+
+.comment        0x0000000000000000       0x3a
+ .comment       0x0000000000000000       0x3a ls1d_std_adc.o
+                                         0x3b (size before relaxing)
+ .comment       0x000000000000003a       0x3b ls1d_std_uart.o
+ .comment       0x000000000000003a       0x3b ls1d_std_spi.o
+ .comment       0x000000000000003a       0x3b ls1d_std_gpio.o
+ .comment       0x000000000000003a       0x3b ls1d_std_measure.o
+ .comment       0x000000000000003a       0x3b ls1d_std_exti.o
+ .comment       0x000000000000003a       0x3b ls1d_std_power.o
+ .comment       0x000000000000003a       0x3b ls1d_std_wdg.o
+ .comment       0x000000000000003a       0x3b ls1d_std_timer.o
+ .comment       0x000000000000003a       0x3b ls1d_std_flash.o
+ .comment       0x000000000000003a       0x3b ls1d_std_printf.o
+ .comment       0x000000000000003a       0x3b ls1d_std_str_other.o
+ .comment       0x000000000000003a       0x3b ls1d_std_clock.o
+ .comment       0x000000000000003a       0x3b UserUart.o
+ .comment       0x000000000000003a       0x3b w25q16.o
+ .comment       0x000000000000003a       0x3b UserClock.o
+ .comment       0x000000000000003a       0x3b GlobalDef.o
+ .comment       0x000000000000003a       0x3b UserGpio.o
+ .comment       0x000000000000003a       0x3b main.o
+ .comment       0x000000000000003a       0x3b ls1d_std_Interrupt.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_adc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_uart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_spi.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_gpio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_measure.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_exti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_power.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_wdg.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_timer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_flash.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_printf.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_str_other.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_clock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserUart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 w25q16.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserClock.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 GlobalDef.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 UserGpio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ls1d_std_Interrupt.o
+
+.debug_frame    0x0000000000000000     0x1c38
+ .debug_frame   0x0000000000000000       0xf8 ls1d_std_adc.o
+ .debug_frame   0x00000000000000f8      0x10c ls1d_std_uart.o
+ .debug_frame   0x0000000000000204       0xf4 ls1d_std_spi.o
+ .debug_frame   0x00000000000002f8       0x90 ls1d_std_gpio.o
+ .debug_frame   0x0000000000000388      0x624 ls1d_std_measure.o
+ .debug_frame   0x00000000000009ac       0xd0 ls1d_std_exti.o
+ .debug_frame   0x0000000000000a7c      0x170 ls1d_std_power.o
+ .debug_frame   0x0000000000000bec       0x30 ls1d_std_wdg.o
+ .debug_frame   0x0000000000000c1c       0xb0 ls1d_std_timer.o
+ .debug_frame   0x0000000000000ccc      0x148 ls1d_std_flash.o
+ .debug_frame   0x0000000000000e14       0xe0 ls1d_std_printf.o
+ .debug_frame   0x0000000000000ef4       0xcc ls1d_std_str_other.o
+ .debug_frame   0x0000000000000fc0      0x194 ls1d_std_clock.o
+ .debug_frame   0x0000000000001154       0xa0 UserUart.o
+ .debug_frame   0x00000000000011f4      0x320 w25q16.o
+ .debug_frame   0x0000000000001514       0x2c UserClock.o
+ .debug_frame   0x0000000000001540       0x40 GlobalDef.o
+ .debug_frame   0x0000000000001580      0x154 UserGpio.o
+ .debug_frame   0x00000000000016d4       0x28 main.o
+ .debug_frame   0x00000000000016fc      0x53c ls1d_std_Interrupt.o
